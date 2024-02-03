@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 //connecting the blog post to a mongoDB, remember 27017 is a default port for mongoDB
-mongoose.connect('mongodb://localhost:27017/blogDB', {
+mongoose.connect('mongodb+srv://kimzz:WQpJjtnJ8R9HffPi@cluster0.m56e0mj.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
